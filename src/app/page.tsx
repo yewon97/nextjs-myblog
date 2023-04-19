@@ -1,12 +1,11 @@
-import PortfolioSwiper from '@/components/GoProductsButton'
-import Profile from '@/components/Profile'
-import Image from 'next/image'
+import FeaturedPortfolio from '@/components/FeaturedPortfolio';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
 		<>
-			<Profile></Profile>
-			<PortfolioSwiper />
+			<Hero />
+			<FeaturedPortfolio />
 		</>
   )
 }

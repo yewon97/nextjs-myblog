@@ -1,0 +1,78 @@
+/* courses section */
+.courses-section {
+  background-color: var(--dark-800);
+  padding-bottom: 50px;
+}
+.course-item {
+	a {
+		width: 100%;
+	}
+}
+.course-img {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.course-item:hover .course-img {
+  transform: scale(0.9);
+  box-shadow: var(--shadow);
+}
+.course-item img {
+  width: 100%;
+}
+.course-img .course-price {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--dark-800);
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.course-info {
+  padding: 15px 0;
+}
+.course-info ul {
+  display: flex;
+  justify-content: space-between;
+}
+.course-info ul li {
+  color: var(--white-800);
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.course-info ul li .fa-star {
+  color: var(--color-1);
+}
+.course-info h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--white-900);
+  margin: 10px 0 0;
+}
+
+.swiper {
+  width: calc(100% - 100px);
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(#fff, .4);
+	border-radius: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}

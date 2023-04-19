@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reset */
+// :root {
+// 	'shadow': 0 0 15px rgba(0, 0, 0, 0.2);
+
+//   scroll-behavior: smooth;
+// }
+
+html,
+body {
+  height: 100vh;
+	// overflow-y: auto;
+}
+
 html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,nav,section,article,header,footer,main,aside,dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
 body,input,select,textarea,button,img,fieldset {border:none;}
 ul,ol,li{ list-style: none;}
@@ -11,10 +22,9 @@ address,cite,code,em,i{font-style:normal;font-weight:normal;}
 label,img,input,select,textarea,button,a {vertical-align:middle;}
 u,ins,a{text-decoration:none;}
 button { cursor: pointer;}
-caption > div, legend, .hide { @include hide;}
+caption > div, legend, .hide { @include hide; }
+a {color: inherit;}
 
-
-/* Normalize */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button { -webkit-appearance:none;}
 input[type="number"]{ -moz-appearance:textfield;}
@@ -57,4 +67,42 @@ input[type="date"]::before {
 }
 input[type="date"]:valid::before {
   display: none;
+}
+
+.portfolio-grid {
+	.swiper-button {
+		&-prev {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: black;
+			color: white;
+
+			&::after {
+				font-size: 20px;
+			}
+		}
+
+		&-next {
+			width: 52px;
+			height: 52px;
+			border-radius: 50%;
+			background-color: black;
+			color: white;
+
+			&::after {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.swiper-pagination {
+		bottom: 0;
+		&-bullet {
+			background-color: #fff;
+			&-active {
+				background-color: #24caac;
+			}
+		}
+	}
 }
